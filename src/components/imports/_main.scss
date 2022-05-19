@@ -1,9 +1,19 @@
 @use "sass:math";
 
+.bluetext {
+  color: $lightblue;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  font-weight: 600;
+  margin: 0;
+  font-size: 1.25rem;
+}
+
 .navbar {
-  background: #0d152e;
+  background: $darkblue;
   height: $base-sizing*3;
   padding: math.div($base-sizing, 2) $base-sizing*2;
+  border-bottom: 1px solid rgba(255,255,255,.1);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,8 +40,7 @@
     list-style-type: none;
 
     a {
-      font-family: 'Cantarell', sans-serif;
-      font-weight: 800;
+      font-weight: 700;
       letter-spacing: .06em;
       text-transform: uppercase;
       color: white;
@@ -42,7 +51,6 @@
 }
 
 .hero, .section {
-  background-color: $darkgrey;
   color: white;
   width: 100%;
   display: flex;
@@ -59,10 +67,14 @@
     display: flex;
     flex-wrap: wrap;
     padding: $base-sizing*2;
+    gap: $base-sizing;
+    align-items: center;
+    justify-content: center;
+    max-width: $base-sizing*42;
 
     img {
-      min-width: $base-sizing*2;
       flex: 1;
+      max-width: $base-sizing*14;
     }
   }
 
@@ -71,8 +83,7 @@
     flex: 1;
 
     h1 {
-      font-family: 'Cantarell', sans-serif;
-      font-weight: 800;
+      font-weight: 700;
     }
   }
 }
@@ -81,5 +92,29 @@
   &__text {
     width: min(100vw, $base-sizing*25);
     padding: $base-sizing*2;
+
+    p {
+      color: #ccc;
+      font-size: .8em;
+    }
+  }
+
+  &__horizontal {
+    display: flex;
+    flex-wrap: wrap;
+    padding: $base-sizing*4 $base-sizing;
+
+    img {
+      margin: 0 auto;
+      max-width: $base-sizing*14;
+      width: 100%;
+    }
+
+    .section__text {
+      width: 100%;
+      padding: 0 $base-sizing;
+      min-width: $base-sizing*15;
+      flex: 1;
+    }
   }
 }

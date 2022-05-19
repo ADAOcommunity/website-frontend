@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-$base-font-family: 'Nunito', -apple-system, BlinkMacSystemFont, "Roboto", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$base-font-family: 'Cantarell', -apple-system, BlinkMacSystemFont, "Roboto", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
 $base-font-size:   20px !default;
 $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
@@ -9,6 +9,8 @@ $base-line-height: 1.5 !default;
 $base-sizing: 30px !default;
 $border-radius: $base-sizing*0.5 !default;
 
+$lightblue: #0080c7;
+$darkblue: #0d152e;
 $darkgrey: #222222;
 $lightgrey: #BBB;
 
@@ -52,8 +54,8 @@ $transition-time: 0.4s;
 }
 
 :root {
-  --background-color: white;
-	--text-color: black;
+  --background-color: #{$darkblue};
+	--text-color: white;
 	--grey-text-color: #666;
 }
 
