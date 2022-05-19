@@ -14,6 +14,7 @@ export default function Home() {
 
     <Topnav></Topnav>
     <Hero></Hero>
+
     <div class="section">
       <div class="section__horizontal">
         <div class="section__text">
@@ -89,6 +90,28 @@ export default function Home() {
           </div>
         </div>
 
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section__horizontal">
+        <div class="section__text">
+          <h3>Partnerships</h3>
+          <p>Together we're building a more decentralized future.</p>
+          <p>We're partnering with some of the top emerging projects on Cardano that are committed to decentralization</p>
+        </div>
+        
+        <div class="section__text section__partners">
+          <div class="img">
+            <img src="MetaDEX_Logo.webp" />
+          </div>
+          <div class="img">
+            <img src="0-1.webp" />
+          </div>
+          <div class="img">
+            <img src="SCAT-logo.webp" />
+          </div>
+        </div>
       </div>
     </div>
   </div>

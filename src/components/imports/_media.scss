@@ -18,6 +18,12 @@
     }
   }
 
+  .section {
+    &__partners {
+      flex-direction: column;
+    }
+  }
+
   .nav-tabs {
     flex-direction: column;
     gap: math.div($base-sizing, 2)

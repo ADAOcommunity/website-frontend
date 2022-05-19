@@ -115,19 +115,38 @@
     gap: $base-sizing;
 
     img {
-      margin: 0 auto;
-      max-width: $base-sizing*14;
-      width: 100%;
+      height: 100%;
+      width: auto;
+      max-width: 120px;
     }
 
     .section__text {
       width: 100%;
-      padding: 0 $base-sizing;
       min-width: $base-sizing*15;
       flex: 1;
       display: flex;
       flex-direction: column;
       justify-content: center;
+    }
+
+    .section__partners {
+      flex-direction: row;
+    }
+  }
+
+  &__partners {
+    flex-direction: row;
+    gap: $base-sizing;
+    flex-wrap: wrap;
+
+    .img {
+      flex: 1;
+
+      img {
+        height: 100%;
+        width: auto;
+        min-width: $base-sizing*5;
+      }
     }
   }
 }
