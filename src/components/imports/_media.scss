@@ -17,4 +17,23 @@
       flex-direction: column;
     }
   }
+
+  .nav-tabs {
+    flex-direction: column;
+    gap: math.div($base-sizing, 2)
+  }
+
+  .tab {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 10px 25px;
+    
+    &::after {
+      display: none;
+    }
+
+    &::before {
+      display: none;
+    }
+  }
 }
