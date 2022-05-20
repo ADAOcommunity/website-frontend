@@ -3,7 +3,8 @@ const tabs = document.querySelectorAll('[data-role="tab"]'),
 
 tabs.forEach(tab => {
   tab.addEventListener("click", () => {
-    const target = document.querySelector(tab.dataset.target)
+    // Tasteful.
+    const target = document.querySelector((<any>tab).dataset.target)
 
     tabContents.forEach(tc => {
       tc.classList.remove("is-active")
