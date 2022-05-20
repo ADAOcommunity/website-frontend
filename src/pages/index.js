@@ -114,6 +114,56 @@ export default function Home() {
         </div>
       </div>
     </div>
+
+    <div class="section section__horizontal section__color">
+      <div class="section__text">
+        <h1>$ADAO Governance Token</h1>
+
+        <div class="accordion">
+          <div class="accordion__tab">
+            <input type="checkbox" id="chck1" />
+            <label class="tab-label" for="chck1">Item 1</label>
+            <div class="tab-content">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, reiciendis!
+            </div>
+          </div>
+          <div class="accordion__tab">
+            <input type="checkbox" id="chck2" />
+            <label class="tab-label" for="chck2">Item 2</label>
+            <div class="tab-content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. A, in!
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section__text">
+          <img class="staking-graphic vr" src="/ADAO-Token-Design-e1644425619941.webp" alt="ADAO Staking Token" />
+        </div>
+    </div>
+
+    <div class="section">
+      <div class="section__text">
+        <h1>Ready to dive into decentralization?</h1>
+        <p>Join our growing, active Discord community and take part in the conversation there. Connect with ADAO members, ask questions, attend meetings, and find out how you can get involved. #DecentralizationTogether</p>
+        <a href="https://discord.gg/gNuF8npW9H" class="btn vr">Join Now</a>
+      </div>
+    </div>
+
+    <div class="section section__image">
+      <div class="section__text text-center">
+        <h1>1018</h1>
+        <p>Discord Members</p>
+        <h1 class="vr">677</h1>
+        <p>Community Members</p>
+        <h1 class="vr">250</h1>
+        <p>ADAO Members</p>
+        <h1 class="vr">18</h1>
+        <p>ADAO Core Contributors</p>
+      </div>
+    </div>
+
+    <Footer></Footer>
   </div>
 }
 
@@ -150,5 +200,39 @@ function Hero() {
 
       <img src={'/ADAO-Full-Logo-White.webp'} alt="ADAO Logo"/>
     </div>
+  </div>
+}
+
+function Footer() {
+  return <div class="footer">
+    <div class="footer__section">
+      <img src="/ADAO-Logo-ADAO-White.svg" class="logo" alt="ADAO Logo" />
+      <p>Providing open source tools to support DAO infrastructure and promote decentralization.</p>
+    </div>
+    <div class="footer__section">
+      <h3>Contact Info</h3>
+      <p>Join our Discord, get in touch with us on Twitter, or send us an email if you have any questions or comments.</p>
+    </div>
+    <div class="footer__section">
+      <p>© Copyright 2022. ADAO | $ADAO Policy id: <span class="force-break">5b01968867e13432afaa2f814e1d15e332d6cd0aa77e350972b0967d</span></p>
+    </div>
+    <div class="footer__section">
+      <ul class="links">
+        <li>
+          <a title="Home" href="/">Home</a>
+        </li>
+        <li>
+          <a title="Roundtable Multi-Sig dApp" href="https://roundtable.theadao.io/">Roundtable Multi-Sig dApp</a>
+        </li>
+        <li>
+          <a title="Medium" href="https://roundtable.theadao.io/">Medium</a>
+        </li>
+        <li>
+          <a title="GitHub" href="https://roundtable.theadao.io/">GitHub</a>
+        </li>
+      </ul>
+    </div>
+
+    <img class="graphic" src="1.svg" atl="" />
   </div>
 }

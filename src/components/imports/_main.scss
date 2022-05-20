@@ -1,7 +1,7 @@
 @use "sass:math";
 
 .vr {
-  margin-top: math.div($base-sizing, 2)
+  margin-top: $base-sizing
 }
 
 .bluetext {
@@ -37,22 +37,6 @@
       width: 100%;
     }
   }
-
-  .links {
-    display: flex;
-    flex-direction: row;
-    gap: $base-sizing;
-    list-style-type: none;
-
-    a {
-      font-weight: 700;
-      letter-spacing: .06em;
-      text-transform: uppercase;
-      color: white;
-      font-size: .6em;
-      text-decoration: none;
-    }
-  }
 }
 
 .hero, .section {
@@ -67,6 +51,8 @@
 .hero {
   height: 100vh;
   background-image: url('/bgwp-e1644425763180.webp');
+  background-size: cover;
+  background-attachment: fixed;
 
   &__wrapper {
     display: flex;
@@ -104,6 +90,12 @@
     }
   }
 
+  &__image {
+    background-image: url("/bgwp-e1644425763180.webp");
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
   &__color {
     background-color: #101c3d
   }
@@ -111,13 +103,14 @@
   &__horizontal {
     display: flex;
     flex-wrap: wrap;
-    padding: $base-sizing*4 $base-sizing;
-    gap: $base-sizing;
+    padding: $base-sizing*4 15vw;
+    gap: $base-sizing*2;
 
     img {
-      height: 100%;
-      width: auto;
-      max-width: 120px;
+      height: auto;
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
     }
 
     .section__text {
@@ -125,6 +118,7 @@
       min-width: $base-sizing*15;
       flex: 1;
       display: flex;
+      padding: 0;
       flex-direction: column;
       justify-content: center;
     }
@@ -141,11 +135,12 @@
 
     .img {
       flex: 1;
+      max-width: $base-sizing*5;
+      width: 100%;
 
       img {
-        height: 100%;
-        width: auto;
-        min-width: $base-sizing*5;
+        height: auto;
+        width: 100%;
       }
     }
   }
@@ -182,7 +177,8 @@
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
-}
+
+
 
 .tab {
   padding: 10px 25px;
@@ -219,6 +215,7 @@
     width: 1px;
     background: $lightblue;
   }
+}
 }
 
 .tab-panel {
@@ -262,4 +259,143 @@
   &.is-active {
     display: flex;
   }
+}
+
+.accordion {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  &__tab {
+    width: 100%;
+    color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #0d152e;
+
+    input {
+      display: none;
+    }
+    
+    .tab-label {
+      display: flex;
+      justify-content: space-between;
+      padding: 1em;
+      background: #0d152e;
+      font-weight: bold;
+      cursor: pointer;
+      /* Icon */
+      &:hover {
+        background: darken(#0d152e, 10%);
+      }
+      &::after {
+        content: "\276F";
+        width: 1em;
+        height: 1em;
+        text-align: center;
+        transition: all .35s;
+      }
+    }
+    .tab-content {
+      max-height: 0;
+      padding: 0 1em;
+      color: #0d152e;
+      background: #0d152e;
+      color: white;
+      transition: all .35s ease;
+    }
+    .tab-close {
+      display: flex;
+      justify-content: flex-end;
+      padding: 1em;
+      font-size: 0.75em;
+      background: #0d152e;
+      cursor: pointer;
+      &:hover {
+        background: darken(#0d152e, 10%);
+      }
+    }
+
+    // :checked
+    input:checked {
+      + .tab-label {
+        //background: darken($midnight, 10%);
+        &::after {
+          transform: rotate(90deg);
+        }
+      }
+      ~ .tab-content {
+        max-height: 100vh;
+        padding: 1em;
+      }
+    }
+    
+  }
+}
+
+.staking-graphic {
+  width: 75%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  gap: $base-sizing;
+  list-style-type: none;
+  padding: 0;
+  justify-content: space-between;
+
+  a {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    font-size: .62em;
+    text-decoration: none;
+  }
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: $base-sizing*6 15vw;
+  gap: $base-sizing*2;
+  justify-content: space-between;
+  position: relative;
+
+  &__section {
+    width: 100%;
+    min-width: $base-sizing*15;
+    max-width: $base-sizing*20;
+
+    img {
+      width: 300px;
+    }
+
+    p {
+      font-size: .9em;
+    }
+  }
+
+  .links {
+    a {
+      font-size: .7em;
+    }
+  }
+
+  .graphic {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    opacity: .05;
+  }
+}
+
+.force-break {
+  word-break: break-all
 }
