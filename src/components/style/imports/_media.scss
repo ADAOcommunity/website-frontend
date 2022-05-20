@@ -4,9 +4,16 @@
 }
 
 @media only screen and (max-width: $on-mobile) {
+  h1 {
+    font-size: 7vw;
+  }
+
   .hero {
     text-align: center;
-    font-size: .7em;
+
+    img {
+      width: 50vw;
+    }
 
     p {
       font-size: 1.4em;
@@ -15,6 +22,10 @@
 
     &__wrapper {
       flex-direction: column;
+    }
+
+    &__text {
+      font-size: .8em;
     }
   }
 
@@ -41,5 +52,76 @@
     &::before {
       display: none;
     }
+  }
+
+  .navbar {
+    justify-content: center;
+    border: none;
+    background-color: none;
+
+    .navbar-brand {
+      width: 45vw;
+    }
+
+    ul {
+      overflow: hidden;
+      display: flex;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: $base-sizing*3;
+      width: 100%;
+      background-color: $darkblue;
+      font-size: 1.2em;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      transition: height $transition-time*2 ease-in-out;
+      z-index: -1;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+
+      li {
+        opacity: 0;
+        display: none;
+
+        a {
+          padding: 7px 0;
+
+          &::after {
+            width: 100%;
+            left: 0;
+          }
+        }
+      }
+    }
+
+    .toggleLabel {
+      display: flex;
+    }
+
+    .toggle:checked ~ ul {
+      height: 100%;
+
+      li {
+        animation: fadein $transition-time*4 linear;
+        opacity: 1;
+        display: block;
+      }
+    }
+  }
+}
+
+@keyframes fadein {
+  0% {
+      opacity: 0
+  }
+
+  50% {
+      opacity: 0
+  }
+
+  100% {
+      opacity: 1
   }
 }

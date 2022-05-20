@@ -26,6 +26,25 @@
   top: 0;
   z-index: 1000;
 
+  .toggle, .toggleLabel {
+    display: none;
+  }
+
+  .toggleLabel {
+    position: absolute;
+    right: $base-sizing;
+    top: 50%;
+    transform: translateY(-50%);
+    justify-content: center;
+    align-items: center;
+
+    svg {
+      width: $base-sizing;
+      height: $base-sizing;
+      fill: white;
+    }
+  }
+
   .navbar-brand {
     height: 100%;
     display: flex;
@@ -49,10 +68,11 @@
 }
 
 .hero {
-  height: 100vh;
+  min-height: 100vh;
   background-image: url("../img/assets/bgwp-e1644425763180.webp");
   background-size: cover;
   background-attachment: fixed;
+  padding: $base-sizing*3 0;
 
   &__wrapper {
     display: flex;
@@ -65,7 +85,7 @@
 
     img {
       flex: 1;
-      max-width: $base-sizing*14;
+      max-width: min($base-sizing*14, 90vw);
     }
   }
 
@@ -111,11 +131,11 @@
       width: 100%;
       max-width: 600px;
       margin: 0 auto;
+      min-width: $base-sizing*2;
     }
 
     .section__text {
       width: 100%;
-      min-width: $base-sizing*15;
       flex: 1;
       display: flex;
       padding: 0;
@@ -352,6 +372,11 @@
   padding: 0;
   justify-content: space-between;
 
+  li {
+    display: flex;
+    align-items: center;
+  }
+
   a {
     font-weight: bold;
     text-transform: uppercase;
@@ -390,7 +415,6 @@
 
   &__section {
     width: 100%;
-    min-width: $base-sizing*15;
     max-width: $base-sizing*20;
 
     img {
