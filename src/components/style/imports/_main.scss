@@ -50,7 +50,7 @@
 
 .hero {
   height: 100vh;
-  background-image: url('/bgwp-e1644425763180.webp');
+  background-image: url("../img/assets/bgwp-e1644425763180.webp");
   background-size: cover;
   background-attachment: fixed;
 
@@ -91,7 +91,7 @@
   }
 
   &__image {
-    background-image: url("/bgwp-e1644425763180.webp");
+    background-image: url("../img/assets/bgwp-e1644425763180.webp");
     background-size: cover;
     background-attachment: fixed;
   }
