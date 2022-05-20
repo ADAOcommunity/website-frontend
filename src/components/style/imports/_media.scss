@@ -84,15 +84,6 @@
       li {
         opacity: 0;
         display: none;
-
-        a {
-          padding: 7px 0;
-
-          &::after {
-            width: 100%;
-            left: 0;
-          }
-        }
       }
     }
 
@@ -108,6 +99,27 @@
         opacity: 1;
         display: block;
       }
+    }
+  }
+
+  .links {
+    flex-wrap: wrap;
+
+    li {
+      a {
+        padding: 7px 0;
+
+        &::after {
+          width: 100%;
+          left: 0;
+        }
+      }
+    }
+  }
+
+  .footer {
+    .links {
+      font-size: min(5.5vw, math.div($base-sizing,2));
     }
   }
 }

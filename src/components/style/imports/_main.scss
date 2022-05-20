@@ -306,6 +306,8 @@
       background: #0d152e;
       font-weight: bold;
       cursor: pointer;
+      gap: math.div($base-sizing, 2);
+      
       /* Icon */
       &:hover {
         background: darken(#0d152e, 10%);
