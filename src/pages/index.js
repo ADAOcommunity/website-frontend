@@ -115,31 +115,62 @@ export default function Home() {
       </div>
     </div>
 
-    <div class="section section__horizontal section__color">
-      <div class="section__text">
-        <h1>$ADAO Governance Token</h1>
+    <div class="section section__color">
+      <div class="section__horizontal">
+        <div class="section__text">
+          <h2>$ADAO Governance Token</h2>
 
-        <div class="accordion">
-          <div class="accordion__tab">
-            <input type="checkbox" id="chck1" />
-            <label class="tab-label" for="chck1">Item 1</label>
-            <div class="tab-content">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, reiciendis!
+          <div class="accordion">
+            <div class="accordion__tab">
+              <input type="checkbox" id="chck1" />
+              <label class="tab-label" for="chck1">What is $ADAO?</label>
+              <div class="tab-content">
+                The ADAO Governance Token is used to vote on proposals that direct the actions of ADAO as an organization. Members of the ADAO Community earn governance tokens as a bounty for work done to promote the mission and projects of the DAO. Tokens may be freely exchanged between members of the community with no restriction.<br></br>
+                $ADAO Policy id: 5b01968867e13432afaa2f814e1d15e332d6cd0aa77e350972b0967d
+              </div>
             </div>
-          </div>
-          <div class="accordion__tab">
-            <input type="checkbox" id="chck2" />
-            <label class="tab-label" for="chck2">Item 2</label>
-            <div class="tab-content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. A, in!
+            <div class="accordion__tab">
+              <input type="checkbox" id="chck2" />
+              <label class="tab-label" for="chck2">ADAO Treasury - 77%</label>
+              <div class="tab-content">
+                The greater majority of $ADAO Governance tokens will be allocated to the treasury and governed by ADAO token holders.
+              </div>
+            </div>
+            <div class="accordion__tab">
+              <input type="checkbox" id="chck3" />
+              <label class="tab-label" for="chck3">Groundwork Bounty Program - 18.4%</label>
+              <div class="tab-content">
+                This allocation will be minted into the treasury and is to be used for onboarding new members & partner projects and rewarding them for their contribution.
+              </div>
+            </div>
+            <div class="accordion__tab">
+              <input type="checkbox" id="chck4" />
+              <label class="tab-label" for="chck4">Initial Core Contributors - 2.6%</label>
+              <div class="tab-content">
+                The amount allocated to “Initial Core Contributors” will be split evenly between the 13 core members who got ADAO where it is today.
+              </div>
+            </div>
+            <div class="accordion__tab">
+              <input type="checkbox" id="chck5" />
+              <label class="tab-label" for="chck5">Blockchain-wide Airdrop - 1.5%</label>
+              <div class="tab-content">
+                This allocation will be distributed blockchain wide to decentralize power and interest in ADAO to the wider Cardano community.
+              </div>
+            </div>
+            <div class="accordion__tab">
+              <input type="checkbox" id="chck6" />
+              <label class="tab-label" for="chck6">Active Community Member Airdrop - 0.5%</label>
+              <div class="tab-content">
+                This allocation has been earmarked as a way to reward early interest in ADAO. It will be distributed equally to ADAO Discord members who were in the server before token mint.
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="section__text">
+        <div class="section__text">
           <img class="staking-graphic vr" src="/ADAO-Token-Design-e1644425619941.webp" alt="ADAO Staking Token" />
         </div>
+      </div>
     </div>
 
     <div class="section">
