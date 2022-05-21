@@ -25,63 +25,65 @@ tabs.forEach(tab => {
 });
 
 async function startCounting() {
-  const response = await fetch(ENDPOINT);
-  const json = await response.json();
+  try {
+    const response = await fetch(ENDPOINT);
+    const json = await response.json();
 
-  if (json) {
-    const data = json.json;
-    const memberCount = data["members"]
-    const supporterCount = data["supporters"]
-    const builderCount = data["builders"]
-    const coreCount = data["core"]
+    if (json) {
+      const data = json.json;
+      const memberCount = data["members"]
+      const supporterCount = data["supporters"]
+      const builderCount = data["builders"]
+      const coreCount = data["core"]
 
-    var im = 0;
-    var is = 0;
-    var ib = 0;
-    var ic = 0;
+      var im = 0;
+      var is = 0;
+      var ib = 0;
+      var ic = 0;
 
-    const max = Math.max(memberCount, supporterCount, builderCount, coreCount);
+      const max = Math.max(memberCount, supporterCount, builderCount, coreCount);
 
-    const memberTick = setInterval(function() {
-      check(memberTick, memberCount, im);
+      const memberTick = setInterval(function() {
+        check(memberTick, memberCount, im);
 
-      if (im < memberCount) {
-        members.innerHTML = im;
-      }
+        if (im < memberCount) {
+          members.innerHTML = im;
+        }
 
-      im++;
-    }, getUniqueTick(memberCount, max));
+        im++;
+      }, getUniqueTick(memberCount, max));
 
-    const supporterTick = setInterval(function() {
-      check(supporterTick, supporterCount, is);
+      const supporterTick = setInterval(function() {
+        check(supporterTick, supporterCount, is);
 
-      if (is < supporterCount) {
-        supporters.innerHTML = is;
-      }
+        if (is < supporterCount) {
+          supporters.innerHTML = is;
+        }
 
-      is++;
-    }, getUniqueTick(supporterCount, max));
+        is++;
+      }, getUniqueTick(supporterCount, max));
 
-    const builderTick = setInterval(function() {
-      check(builderTick, builderCount, ib);
+      const builderTick = setInterval(function() {
+        check(builderTick, builderCount, ib);
 
-      if (ib < builderCount) {
-        builders.innerHTML = ib;
-      }
+        if (ib < builderCount) {
+          builders.innerHTML = ib;
+        }
 
-      ib++;
-    }, getUniqueTick(builderCount, max));
+        ib++;
+      }, getUniqueTick(builderCount, max));
 
-    const coreTick = setInterval(function() {
-      check(coreTick, coreCount, ic);
+      const coreTick = setInterval(function() {
+        check(coreTick, coreCount, ic);
 
-      if (ic < coreCount) {
-        core.innerHTML = ic;
-      }
+        if (ic < coreCount) {
+          core.innerHTML = ic;
+        }
 
-      ic++;
-    }, getUniqueTick(coreCount, max));
-  }
+        ic++;
+      }, getUniqueTick(coreCount, max));
+    }
+  } catch {}
 }
 
 async function check(pid, count, curr) {
