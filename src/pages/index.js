@@ -29,7 +29,7 @@ export default function Home() {
           href="https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&display=swap"
           rel="stylesheet"
         />
-        <script src={withPrefix("../components/scripts/main.js")}></script>
+        <script src={withPrefix("/main.js")}></script>
       </Helmet>
 
       <Topnav></Topnav>
@@ -369,16 +369,26 @@ export default function Home() {
         </div>
       </div>
 
-      <div class="section section__image">
+      <div class="section section__image" id="counting">
         <div class="section__text text-center">
-          <h1>1018</h1>
-          <p>Discord Members</p>
-          <h1 class="vr">677</h1>
-          <p>Community Members</p>
-          <h1 class="vr">250</h1>
-          <p>ADAO Members</p>
-          <h1 class="vr">18</h1>
-          <p>ADAO Core Contributors</p>
+          <div class="counters">
+            <div class="counter">
+              <h1 id="members">1018</h1>
+              <p>Discord Members</p>
+            </div>
+            <div class="counter">
+              <h1 id="supporters">677</h1>
+              <p>ADAO Supporters</p>
+            </div>
+            <div class="counter">
+              <h1 id="builders">250</h1>
+              <p>ADAO Builders</p>
+            </div>
+            <div class="counter">
+              <h1 id="core">18</h1>
+              <p>ADAO Core Contributors</p>
+            </div>
+          </div>
         </div>
       </div>
 

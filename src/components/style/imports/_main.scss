@@ -511,3 +511,19 @@
     background-color: #FF0000
   }
 }
+
+.counters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: math.div($base-sizing, 2);
+  justify-content: space-between;
+
+  .counter {
+    flex: 1;
+    min-width: $base-sizing*4;
+
+    h1 {
+      font-size: min(6vw, 2.5em);
+    }
+  }
+}
