@@ -1,3 +1,5 @@
+const ENDPOINT = "http://localhost:8080/discord"
+
 const tabs = document.querySelectorAll('[data-role="tab"]'),
   tabContents = document.querySelectorAll(".tab-panel"),
   members = document.getElementById("members"),
@@ -23,7 +25,7 @@ tabs.forEach(tab => {
 });
 
 async function startCounting() {
-  const response = await fetch("http://localhost:8080/discord");
+  const response = await fetch(ENDPOINT);
   const json = await response.json();
 
   if (json) {
