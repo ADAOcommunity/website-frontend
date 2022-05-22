@@ -527,3 +527,22 @@
     }
   }
 }
+
+.skeleton {
+  height: $base-sizing;
+  margin-bottom: 6px;
+  border-radius: 2px;
+  background: rgba(130, 130, 130, 0.7);
+  background: linear-gradient(to right, rgba(130, 130, 130, 0.4) 8%, rgba(130, 130, 130, 0.5) 18%, rgba(130, 130, 130, 0.4) 33%);
+  background-size: 800px 100px;
+  animation: wave-lines 2s infinite ease-out;
+}
+
+@keyframes wave-lines {
+  0% {
+      background-position: -468px 0;
+  }
+   100% {
+      background-position: 468px 0;
+  }
+}

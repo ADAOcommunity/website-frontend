@@ -374,19 +374,19 @@ export default function Home() {
         <div class="section__text text-center">
           <div class="counters">
             <div class="counter">
-              <h1 id="members">1018</h1>
+              <h1 id="members"><div class="skeleton"></div></h1>
               <p>Discord Members</p>
             </div>
             <div class="counter">
-              <h1 id="supporters">677</h1>
+              <h1 id="supporters"><div class="skeleton"></div></h1>
               <p>ADAO Supporters</p>
             </div>
             <div class="counter">
-              <h1 id="builders">250</h1>
+              <h1 id="builders"><div class="skeleton"></div></h1>
               <p>ADAO Builders</p>
             </div>
             <div class="counter">
-              <h1 id="core">18</h1>
+              <h1 id="core"><div class="skeleton"></div></h1>
               <p>ADAO Core Contributors</p>
             </div>
           </div>
