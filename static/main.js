@@ -25,6 +25,7 @@ tabs.forEach(tab => {
 });
 
 async function startCounting() {
+  console.log("HELLO WORLD!")
   try {
     const response = await fetch(ENDPOINT);
     const json = await response.json();
