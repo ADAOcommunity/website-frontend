@@ -34,7 +34,7 @@ export default function Home() {
         <meta property="og:description" content="At ADAO, we never stop thinking about decentralization. Our tools are designed to empower the community and promote decentralization throughout the Cardano ecosystem. We know that decentralization is a process, but we believe in the power of what we can accomplish if we work together. We're providing open source tools to support DAO infrastructure and promote decentralization." />
         <meta property="og:url" content="https://theadao.io/" />
         <meta property="og:site_name" content="ADAO - Decentralization Together" />
-        <link rel="shortlink" href="https://brazosriverblooms.com" />
+        <link rel="shortlink" href="https://theadao.io/" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
