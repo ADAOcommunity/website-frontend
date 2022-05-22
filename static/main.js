@@ -1,4 +1,4 @@
-const ENDPOINT = "http://localhost:8080/discord"
+const ENDPOINT = "https://backend.zachmontgomery.com/discord"
 
 const tabs = document.querySelectorAll('[data-role="tab"]'),
   tabContents = document.querySelectorAll(".tab-panel"),
