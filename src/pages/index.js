@@ -1,4 +1,5 @@
 import React from "react"
+import { withPrefix } from "gatsby"
 
 import About from "./imports/about"
 import Clickthrough from "./imports/clickthrough"
