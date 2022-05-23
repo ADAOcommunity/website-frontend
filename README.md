@@ -14,6 +14,7 @@ The frontend for ADAO's website. To view the backend [referenced solely within `
 ### Development
 
 - Use `yarn start` to start a development environment with Gatsby.
+- To get rid of the cache and do a hard refresh, use `yarn clean`
 
 ### Production
 
