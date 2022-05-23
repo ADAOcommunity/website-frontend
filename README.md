@@ -11,6 +11,7 @@ The frontend for ADAO's website. To view the backend [referenced solely within `
 - Change the first line of `static/main.js`. It's hard to use configuration files with front-facing JavaScript.
 
 ## Running
+
 ### Development
 
 - Use `yarn start` to start a development environment with Gatsby.
