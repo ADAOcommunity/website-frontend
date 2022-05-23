@@ -29,6 +29,8 @@ export default function Home() {
       <Members></Members>
 
       <Footer></Footer>
+      
+      <script src={withPrefix("/main.js")} defer></script>
     </div>
   )
 }

@@ -33,7 +33,6 @@ export default function Head() {
         href="https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&display=swap"
         rel="stylesheet"
       />
-      <script src={withPrefix("/main.js")}></script>
     </Helmet>
   )
 }
