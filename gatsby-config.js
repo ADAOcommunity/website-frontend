@@ -5,6 +5,9 @@
  */
 
 module.exports = {
-  /* Your site config here */
-  plugins: [`gatsby-plugin-sass`],
+  pathPrefix: '__GATSBY_IPFS_PATH_PREFIX__',
+  plugins: [
+    'gatsby-plugin-ipfs',
+    `gatsby-plugin-sass`
+  ],
 }

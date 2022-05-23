@@ -1,6 +1,6 @@
 import React from "react"
 
-import tokendesign from "../../components/img/assets/ADAO-Token-Design-e1644425619941.webp"
+import tokendesign from "../../components/img/assets/ADAO-Token-Design-e1644425619941.png"
 
 export default function Governance() {
   return (

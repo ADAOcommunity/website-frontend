@@ -1,6 +1,6 @@
 import React from "react"
 
-import logowhite from "../../components/img/assets/ADAO-Full-Logo-White.webp"
+import logowhite from "../../components/img/assets/ADAO-Full-Logo-White.png"
 
 export default function Hero() {
   return (

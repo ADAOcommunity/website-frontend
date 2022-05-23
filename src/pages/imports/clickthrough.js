@@ -4,7 +4,7 @@ import one from "../../components/img/assets/1.png"
 import two from "../../components/img/assets/2.png"
 import nine from "../../components/img/assets/9.png"
 
-import logogradient from "../../components/img/assets/ADAO-Full-Logo-Blue-Gradient.webp"
+import logogradient from "../../components/img/assets/ADAO-Full-Logo-Blue-Gradient.png"
 
 export default function Clickthrough() {
   return (

@@ -1,8 +1,8 @@
 import React from "react"
 
-import metadex from "../../components/img/partners/metadex.webp"
-import ratsdao from "../../components/img/partners/ratsdao.webp"
-import scat from "../../components/img/partners/scat.webp"
+import metadex from "../../components/img/partners/metadex.png"
+import ratsdao from "../../components/img/partners/ratsdao.png"
+import scat from "../../components/img/partners/scat.png"
 
 export default function Partners() {
   return (
