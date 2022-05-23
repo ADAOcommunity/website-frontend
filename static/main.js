@@ -1,4 +1,4 @@
-const ENDPOINT = "https://backend.zachmontgomery.com/discord"
+const ENDPOINT = "https://skitter-zealous-radon.glitch.me/discord"
 
 const tabs = document.querySelectorAll('[data-role="tab"]'),
   tabContents = document.querySelectorAll(".tab-panel"),
