@@ -10,14 +10,16 @@ import mantra from "../../components/img/branding/DT1-1100x850.png"
 export default function Branding() {
   return <div className="section section__color">
     <div className="section__wide">
-      <div className="flipbox" data-aos="fade-left">
-        <div className="flipbox__front">
-          <h3>Brand Identity Guide</h3>
-        </div>
+      <div data-aos="fade-left">
+        <div className="flipbox">
+          <div className="flipbox__front">
+            <h3>Brand Identity Guide</h3>
+          </div>
 
-        <div className="flipbox__back">
-          <h3>2022 Brand Identity Guide</h3>
-          <p>May 13th, 2022 &mdash; ADAO Governance Token holders voted to approve and adopt the updated Brand Guidelines for 2022.</p>
+          <div className="flipbox__back">
+            <h3>2022 Brand Identity Guide</h3>
+            <p>May 13th, 2022 &mdash; ADAO Governance Token holders voted to approve and adopt the updated Brand Guidelines for 2022.</p>
+          </div>
         </div>
       </div>
 
@@ -28,14 +30,16 @@ export default function Branding() {
       <img src={typography} alt="Display of brand typography." className="vr" />
       <img src={final} alt="" className="vr" />
 
-      <div className="flipbox vr" data-aos="fade-right">
-        <div className="flipbox__front">
-          <h3>ADAO Brand Assets</h3>
-        </div>
+      <div data-aos="fade-right">
+        <div className="flipbox vr">
+          <div className="flipbox__front">
+            <h3>ADAO Brand Assets</h3>
+          </div>
 
-        <div className="flipbox__back">
-          <h3>Download Brand Assets</h3>
-          <p>Download assets here: <a download href="/ADAO-Brand-Assets-2022.zip">ADAO Brand Assets &mdash; 2022</a></p>
+          <div className="flipbox__back">
+            <h3>Download Brand Assets</h3>
+            <p>Download assets here: <a download href="/ADAO-Brand-Assets-2022.zip">ADAO Brand Assets &mdash; 2022</a></p>
+          </div>
         </div>
       </div>
     </div>
