@@ -34,8 +34,8 @@ export default function Head() {
         rel="stylesheet"
       />
       <script src={withPrefix("/main.js")} async></script>
-      <link href="/aos.css" rel="stylesheet" async />
-      <script src="/aos.js" async></script>
+      <link href={withPrefix("/aos.css")} rel="stylesheet" async />
+      <script src={withPrefix("/aos.js")} async></script>
     </Helmet>
   )
 }
