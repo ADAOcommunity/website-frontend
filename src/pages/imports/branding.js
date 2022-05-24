@@ -10,7 +10,7 @@ import mantra from "../../components/img/branding/DT1-1100x850.png"
 export default function Branding() {
   return <div className="section section__color">
     <div className="section__wide">
-      <div className="flipbox">
+      <div className="flipbox" data-aos="fade-left">
         <div className="flipbox__front">
           <h3>Brand Identity Guide</h3>
         </div>
@@ -28,7 +28,7 @@ export default function Branding() {
       <img src={typography} alt="Display of brand typography." className="vr" />
       <img src={final} alt="" className="vr" />
 
-      <div className="flipbox vr">
+      <div className="flipbox vr" data-aos="fade-right">
         <div className="flipbox__front">
           <h3>ADAO Brand Assets</h3>
         </div>
