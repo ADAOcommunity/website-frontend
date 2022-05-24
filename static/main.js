@@ -128,7 +128,11 @@ if (index) {
     })
   }
 
-  const observer = new IntersectionObserver(intersectionCounting, options)
-  const target = document.querySelector("#counting")
-  observer.observe(target)
+  try {
+    const observer = new IntersectionObserver(intersectionCounting, options)
+    const target = document.querySelector("#counting")
+    observer.observe(target)
+  } catch {
+    startCounting();
+  }
 }
