@@ -9,8 +9,8 @@ export default function Partners() {
     <div className="section">
       <div className="section__horizontal">
         <div className="section__text">
-          <h3>Partnerships</h3>
-          <p>Together we're building a more decentralized future.</p>
+          <h6>Partnerships</h6>
+          <h3>Together we're building a more decentralized future.</h3>
           <p>
             We're partnering with some of the top emerging projects on Cardano
             that are committed to decentralization
