@@ -6,16 +6,26 @@
 
 .bluetext {
   color: $lightblue;
-  text-transform: uppercase;
   margin-bottom: 25px;
   font-weight: 600;
   margin: 0;
+}
+
+.uppercase {
   font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+.centered {
+  text-align: center;
+}
+
+.spacer, .navbar {
+  height: $base-sizing*3;
 }
 
 .navbar {
   background: $darkblue;
-  height: $base-sizing*3;
   padding: math.div($base-sizing, 2) $base-sizing*2;
   border-bottom: 1px solid rgba(255,255,255,.1);
   display: flex;
@@ -110,6 +120,11 @@
     }
   }
 
+  &__wide {
+    width: min(100vw, $base-sizing*30);
+    padding: $base-sizing*2 0;
+  }
+
   &__image {
     background-image: url("../img/assets/bgwp-e1644425763180.png");
     background-size: cover;
@@ -124,7 +139,7 @@
     display: flex;
     flex-wrap: wrap;
     padding: $base-sizing*4 15vw;
-    gap: $base-sizing*2;
+    gap: $base-sizing*3;
 
     img {
       height: auto;
@@ -150,8 +165,11 @@
 
   &__partners {
     flex-direction: row;
-    gap: $base-sizing;
+    gap: $base-sizing*2;
     flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
     .img {
       flex: 1;
@@ -161,6 +179,28 @@
       img {
         height: auto;
         width: 100%;
+      }
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      gap: math.div($base-sizing, 4);
+      min-width: min(100%, $base-sizing*8);
+      align-items: center;
+      text-align: center;
+
+      a {
+        color: white;
+      }
+
+      .img {
+        max-width: $base-sizing*6;
+      }
+
+      .vertical {
+        display: flex;
+        flex-direction: column;
       }
     }
   }
@@ -180,6 +220,16 @@
   svg {
     height: math.div($base-sizing, 2);
     fill: white;
+  }
+
+  .join {
+    color: #fff;
+    border-radius: 50%;
+    height: $base-sizing;
+    padding: 7px;
+    margin-left: 5px;
+    background: rgba(255,255,255,.1);
+    border: 1px dashed rgba(255,255,255,.5);
   }
 }
 
@@ -429,6 +479,8 @@
   }
 
   .links {
+    justify-content: left;
+
     a {
       font-size: .7em;
     }
@@ -536,6 +588,61 @@
   background: linear-gradient(to right, rgba(130, 130, 130, 0.4) 8%, rgba(130, 130, 130, 0.5) 18%, rgba(130, 130, 130, 0.4) 33%);
   background-size: 800px 100px;
   animation: wave-lines 2s infinite ease-out;
+}
+
+.flipbox {
+  display: flex;
+  position: relative;
+  width: 100%;
+  transition: transform 2s;
+  height: $base-sizing*8;
+
+  &__front, &__back {
+    backface-visibility: hidden;
+    position: absolute;
+    width: 100%;
+    transition: transform .5s ease-in-out;
+    transform-style: preserve-3d;
+    top: 0;
+    left: 0;
+    background-color: $lightblue;
+    border-radius: $border-radius;
+    display: flex;
+    padding: 0 $base-sizing;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  p {
+    color: #ccc;
+  }
+
+  a {
+    color: white;
+  }
+
+  &__front {
+    transform: rotateY(0deg);
+    background-image: url("../img/assets/ADAO-BG-1024x576.png");
+  }
+
+  &__back {
+    transform: rotateY(180deg);
+    background-color: darken($lightblue, 15%);
+  }
+
+  &:hover {
+    .flipbox__front {
+      transform: rotateY(180deg);
+    }
+  
+    .flipbox__back {
+      transform: rotateY(0deg);
+    }
+  }
 }
 
 @keyframes wave-lines {

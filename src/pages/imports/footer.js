@@ -83,32 +83,18 @@ export default function Footer() {
           </li>
           <li>
             <a
-              title="Roundtable Multi-Sig dApp"
-              href="https://roundtable.theadao.io/"
-              rel="noopener noreferrer"
-              target="_blank"
+              title="Partnerships"
+              href="/partnerships"
             >
-              Roundtable Multi-Sig dApp
+              Partnerships
             </a>
           </li>
           <li>
             <a
-              title="Medium"
-              href="https://medium.com/@ADAOcommunity"
-              rel="noopener noreferrer"
-              target="_blank"
+              title="Brand Guide &amp; Assets"
+              href="/branding"
             >
-              Medium
-            </a>
-          </li>
-          <li>
-            <a
-              title="GitHub"
-              href="https://github.com/ADAOcommunity"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              GitHub
+              Brand Guide &amp; Assets
             </a>
           </li>
         </ul>

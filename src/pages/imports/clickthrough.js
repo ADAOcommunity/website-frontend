@@ -44,7 +44,7 @@ export default function Clickthrough() {
           </li>
         </ul>
 
-        <div className="tab-content">
+        <div className="tab-content" data-aos="fade-up" data-aos-delay="300">
           <div className="tab-panel is-active" id="tabs-home3">
             <div className="tab-panel__text">
               <h1>Our Mission</h1>

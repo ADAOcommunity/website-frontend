@@ -10,7 +10,7 @@ export default function About() {
           <img src={ten} alt="" />
         </div>
         <div className="section__text">
-          <h5 className="bluetext">About ADAO</h5>
+          <h5 className="bluetext uppercase">About ADAO</h5>
           <h3>Driven By Decentralization</h3>
           <p>
             At ADAO, we never stop thinking about decentralization. Our tools

@@ -103,7 +103,7 @@ export default function Governance() {
           </div>
         </div>
 
-        <div className="section__text">
+        <div className="section__text" data-aos="fade-right" data-aos-delay="300">
           <img
             className="staking-graphic vr"
             src={tokendesign}

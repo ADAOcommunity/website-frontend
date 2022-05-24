@@ -15,6 +15,12 @@ export default function Partners() {
             We're partnering with some of the top emerging projects on Cardano
             that are committed to decentralization
           </p>
+          <a
+            className="btn vr"
+            href="/partnerships"
+          >
+            View All
+          </a>
         </div>
 
         <div className="section__text section__partners">

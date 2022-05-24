@@ -1,6 +1,7 @@
 import React from "react"
 
 import Helmet from "react-helmet"
+import { withPrefix } from "gatsby"
 
 export default function Head() {
   return (
@@ -32,6 +33,9 @@ export default function Head() {
         href="https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&display=swap"
         rel="stylesheet"
       />
+      <script src={withPrefix("/main.js")} async></script>
+      <link href="/aos.css" rel="stylesheet" async />
+      <script src="/aos.js" async></script>
     </Helmet>
   )
 }

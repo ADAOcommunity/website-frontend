@@ -1,5 +1,4 @@
 import React from "react"
-import { withPrefix } from "gatsby"
 
 import About from "./imports/about"
 import Clickthrough from "./imports/clickthrough"
@@ -16,7 +15,7 @@ import "../components/style/style.scss"
 
 export default function Home() {
   return (
-    <div>
+    <div id="index">
       <Head></Head>
 
       <Topnav></Topnav>
@@ -30,8 +29,6 @@ export default function Home() {
       <Members></Members>
 
       <Footer></Footer>
-      
-      <script src={withPrefix("/main.js")} defer></script>
     </div>
   )
 }
