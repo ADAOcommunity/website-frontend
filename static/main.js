@@ -1,3 +1,5 @@
+'use strict';
+
 const ENDPOINT = "https://skitter-zealous-radon.glitch.me/discord"
 
 var checkExist = setInterval(function() {
