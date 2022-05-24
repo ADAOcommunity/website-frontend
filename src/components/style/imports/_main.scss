@@ -24,6 +24,10 @@
   height: $base-sizing*3;
 }
 
+.fof {
+  min-width: $base-sizing*10;
+}
+
 .navbar {
   background: $darkblue;
   border-bottom: 1px solid rgba(255,255,255,.1);
@@ -128,7 +132,7 @@
   }
 
   &__wide {
-    width: min(100vw, $base-sizing*30);
+    width: min(100%, $base-sizing*30);
     padding: $base-sizing*2 0;
   }
 
