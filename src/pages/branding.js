@@ -19,7 +19,7 @@ export default function Home() {
 
       <div className="section">
         <div class="section__text centered">
-          <h1>Partnerships</h1>
+          <h1>Branding</h1>
         </div>
       </div>
 
