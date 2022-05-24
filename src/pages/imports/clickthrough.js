@@ -8,7 +8,7 @@ import logogradient from "../../components/img/assets/ADAO-Full-Logo-Blue-Gradie
 
 export default function Clickthrough() {
   return (
-    <div className="section section__color">
+    <div className="section section__color" id="clickthrough">
       <div className="tabs-wrapper">
         <ul className="nav-tabs">
           <li

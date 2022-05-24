@@ -26,15 +26,22 @@
 
 .navbar {
   background: $darkblue;
-  padding: math.div($base-sizing, 2) $base-sizing*2;
   border-bottom: 1px solid rgba(255,255,255,.1);
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000;
+  padding: 0 $base-sizing;
+
+  &__inner {
+    width: min(100vw, $base-sizing*42);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: math.div($base-sizing, 2) $base-sizing;
+  }
 
   .toggle, .toggleLabel {
     display: none;
@@ -79,7 +86,7 @@
 
 .hero {
   min-height: 100vh;
-  background-image: url("../img/assets/bgwp-e1644425763180.png");
+  background-image: url("../img/assets/bg-e1653244683707.png");
   background-size: cover;
   background-attachment: fixed;
   padding: $base-sizing*3 0;
@@ -126,7 +133,7 @@
   }
 
   &__image {
-    background-image: url("../img/assets/bgwp-e1644425763180.png");
+    background-image: url("../img/assets/bg-e1653244683707.png");
     background-size: cover;
     background-attachment: fixed;
   }
@@ -288,6 +295,13 @@
 }
 }
 
+.animate {
+  .tab-panel__img, .tab-panel__text {
+    animation: fadeout $transition-time!important;
+    opacity: 0!important;
+  }
+}
+
 .tab-panel {
   display: none;
   background-color: $darkblue;
@@ -311,6 +325,11 @@
     }
   }
 
+  &__text, &__img {
+    opacity: 0;
+    animation: fadeout $transition-time;
+  }
+
   &__text {
     flex: 1;
     font-size: .9em;
@@ -328,6 +347,30 @@
 
   &.is-active {
     display: flex;
+
+    .tab-panel__text, .tab-panel__img {
+      opacity: 1;
+      animation: fadein $transition-time;
+    }
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
   }
 }
 
