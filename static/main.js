@@ -1,10 +1,12 @@
 const ENDPOINT = "https://skitter-zealous-radon.glitch.me/discord"
 
 var checkExist = setInterval(function() {
-  if (AOS) {
-     clearInterval(checkExist);
-     AOS.init();
+  try {
+    if (AOS) {
+      AOS.init();
+      clearInterval(checkExist);
     }
+  } catch {}
 }, 100); // check every 100ms
 
 const index = document.getElementById("index");
