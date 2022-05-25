@@ -27,12 +27,6 @@ export default function Head() {
         content="ADAO - Decentralization Together"
       />
       <link rel="shortlink" href="https://theadao.io/" />
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&display=swap"
-        rel="stylesheet"
-      />
       <script src={withPrefix("/main.js")} async></script>
       <link href={withPrefix("/aos.css")} rel="stylesheet" async />
       <script src={withPrefix("/aos.js")} async></script>
