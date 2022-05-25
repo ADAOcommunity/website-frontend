@@ -55,9 +55,12 @@
   }
 
   .navbar {
-    justify-content: center;
     border: none;
     background-color: none;
+
+    &__inner {
+      justify-content: center;
+    }
 
     .navbar-brand {
       width: 45vw;
