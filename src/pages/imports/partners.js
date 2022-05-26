@@ -19,7 +19,9 @@ export default function Partners() {
             className="btn vr"
             href="/partnerships"
           >
-            View All
+            <span className="text">
+              View All
+            </span>
           </a>
         </div>
 

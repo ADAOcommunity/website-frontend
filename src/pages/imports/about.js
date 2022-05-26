@@ -35,7 +35,9 @@ export default function About() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Get Involved
+            <span className="text">
+              Get Involved
+            </span>
           </a>
         </div>
       </div>

@@ -28,7 +28,9 @@ export default function Home() {
               className="btn vr"
               href="/"
             >
-              Back home
+              <span className="text">
+                Back home
+              </span>
             </a>
           </div>
         </div>

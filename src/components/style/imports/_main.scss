@@ -227,8 +227,13 @@
   gap: 5px;
   width: $base-sizing*7;
   height: $base-sizing*2;
-  line-height: $base-sizing*2;
   justify-content: center;
+  font-size: 1.2rem;
+
+  .text {
+    height: $base-sizing;
+    padding-top: 0.15rem;
+  }
   
   svg {
     height: math.div($base-sizing, 2);
