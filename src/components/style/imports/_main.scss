@@ -220,13 +220,15 @@
 .btn {
   background: linear-gradient(90deg,#00487d 0%,#0080c7 100%);
   border-radius: 100px;
-  padding: 10px 40px;
   color: white;
   text-decoration: none;
   display: flex;
   align-items: center;
   gap: 5px;
-  width: max-content;
+  width: $base-sizing*7;
+  height: $base-sizing*2;
+  line-height: $base-sizing*2;
+  justify-content: center;
   
   svg {
     height: math.div($base-sizing, 2);
